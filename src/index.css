@@ -1,0 +1,82 @@
+/* https://fonts.google.com/specimen/Anton?preview.text=05h%2007m%2023s&query=Anton */
+@font-face {
+  font-family: "antonregular";
+  src: url("./assets/fonts/anton-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/anton-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://fonts.google.com/specimen/Lilita+One?preview.text=05h%2007m%2023s&query=Lilita+One */
+@font-face {
+  font-family: "lilita_oneregular";
+  src: url("./assets/fonts/lilitaone-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/lilitaone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://fonts.google.com/specimen/Russo+One?preview.text=05h%2007m%2023s&query=Russo+One */
+@font-face {
+  font-family: "russo_oneregular";
+  src: url("./assets/fonts/russoone-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/russoone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://fonts.google.com/specimen/Orbitron?preview.text=05h%2007m%2023s&query=Orbitron */
+@font-face {
+  font-family: "orbitronregular";
+  src: url("./assets/fonts/orbitron-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/orbitron-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-face: antonregular;
+  --time-dropdown-font-size: 12rem;
+}
+
+.font-orbitronregular {
+  --font-face: orbitronregular;
+  --time-dropdown-font-size: 9rem;
+}
+
+.font-russo-oneregular {
+  --font-face: russo_oneregular;
+  --time-dropdown-font-size: 10rem;
+}
+
+.font-lilita-oneregular {
+  --font-face: lilita_oneregular;
+  --time-dropdown-font-size: 10rem;
+}
+
+body {
+  font-family: var(--font-face), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-face), system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a > span {
+  font-family: var(--font-face), system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
